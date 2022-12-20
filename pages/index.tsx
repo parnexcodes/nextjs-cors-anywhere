@@ -97,8 +97,7 @@ const LandingContent = () => {
 const LandingPage = () => {
   return (
     <>
-      <Metadata />
-      <LandingContent />
+      <div>https://nextjs-cors-anywhere-lime.vercel.app/api?endpoint=url</div>
     </>
   );
 };
