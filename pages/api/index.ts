@@ -36,7 +36,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     console.log(reqConfig.params);
     const endpointReq = await axios(reqConfig);
-    const endpointRes = await endpointReq.data.replaceAll("https://", "https://nextjs-cors-anywhere-lime.vercel.app/https://");
+    const endpointRes = await endpointReq.data.replaceAll("https://", "https://nextjs-cors-anywhere-lime.vercel.app/api?endpoint=https://");
 
     res.status(200).json(endpointRes);
   } catch (err) {
