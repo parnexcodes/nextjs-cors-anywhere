@@ -5,8 +5,8 @@
   "author": "deybyr647 <deybyr647@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
+    "dev": "next --openssl-legacy-provider dev",
+    "start": "next --openssl-legacy-provider start",
     "build": "next build",
     "lint": "next lint",
     "format": "prettier -w ."
