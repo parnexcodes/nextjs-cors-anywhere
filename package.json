@@ -5,9 +5,9 @@
   "author": "deybyr647 <deybyr647@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next --openssl-legacy-provider dev",
-    "start": "next --openssl-legacy-provider start",
-    "build": "next build",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
+    "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next start",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build",
     "lint": "next lint",
     "format": "prettier -w ."
   },
